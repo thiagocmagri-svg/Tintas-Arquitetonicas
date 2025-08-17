@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="google-site-verification" content="GZSagLj2LFQT4mFQSpVS5NQXD1hJOq2gq5_PdbFGupU" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Tintas Arquitetônicas</title>
+    <meta name="description" content="Descubra as diferenças entre tintas internas, externas, premium, standard e econômicas. Compare durabilidade, cobertura e rendimento e conheça o PSQ.">
+    <meta name="keywords" content="tintas arquitetônicas, tinta interna, tinta externa, tinta premium, tinta standard, PSQ, pintura, acabamento">
+    <meta name="author" content="Thiago Cavalheiro Magri">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .paint-palette {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+            background-size: 600% 600%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .nav-active {
+            color: #4f46e5 !important;
+            border-bottom: 2px solid #4f46e5;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+        
+        .comparison-table {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .premium-badge {
+            background: linear-gradient(45deg, #ffd700, #ffed4a);
+        }
+        
+        .standard-badge {
+            background: linear-gradient(45deg, #60a5fa, #3b82f6);
+        }
+        
+        .economical-badge {
+            background: linear-gradient(45deg, #34d399, #10b981);
+        }
+        
+        .paint-icon {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-item {
+            border-left: 4px solid #4f46e5;
+        }
+        
+        .blog-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .psq-highlight {
+            background: linear-gradient(135deg, #ebf8ff 0%, #dbeafe 100%);
+            border-left: 5px solid #3b82f6;
+        }
+        
+        .internal-paint { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); }
+        .external-paint { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); }
+        .premium-paint { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
+        .standard-paint { background: linear-gradient(135deg, #ddd6fe 0%, #c7d2fe 100%); }
+        .economical-paint { background: linear-gradient(135deg, #d1fae5 0%, #bbf7d0 100%); }
+        
+        @media print {
+            .no-print { display: none !important; }
+            body { font-size: 12px; line-height: 1.4; }
+            .card-hover { box-shadow: none; transform: none; }
+        }
+        
+        .content-section {
+            page-break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="paint-palette text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-palette text-3xl"></i>
+                    <h1 class="text-3xl font-bold">Guia de Tintas Arquitetônicas</h1>
+                </div>
+            </div>
+            <nav class="mt-6">
+                <ul class="flex flex-wrap space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></li>
+                    <li><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></li>
+                    <li><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></li>
+                    <li><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></li>
+                    <li><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+<section id="tipos" class="py-16 bg-white content-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6 section-title">Comparativo Completo de Tipos de Tinta</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Entenda as diferenças entre cada tipo de tinta e escolha a opção ideal para seu projeto específico.
+                </p>
+            </div>
+
+            <!-- Internal vs External Comparison -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-gray-800">Tintas Internas vs Externas</h3>
+                <div class="comparison-table rounded-2xl p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Internal Paint Details -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-orange-500">
+                            <div class="flex items-center mb-6">
+                                <i class="fas fa-home text-3xl text-orange-500 mr-4"></i>
+                                <h4 class="text-2xl font-bold text-gray-800">Tintas Internas</h4>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-droplet text-orange-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Composição</h5>
+                                        <p class="text-gray-600 text-sm">Base aquosa com baixo COV (Compostos Orgânicos Voláteis), pigmentos suaves e resinas específicas para ambientes internos.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-shield-alt text-orange-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Resistência</h5>
+                                        <p class="text-gray-600 text-sm">Proteção contra umidade moderada, manchas e riscos. Não suporta exposição direta ao sol ou chuva.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-clock text-orange-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Durabilidade</h5>
+                                        <p class="text-gray-600 text-sm">5-8 anos em condições normais de uso interno, com manutenção ocasional.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-palette text-orange-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Acabamentos</h5>
+                                        <p class="text-gray-600 text-sm">Fosco, acetinado, semibrilho. Maior variedade de cores e texturas decorativas.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-home text-orange-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Aplicação Ideal</h5>
+                                        <p class="text-gray-600 text-sm">Salas, quartos, escritórios, corredores e áreas internas cobertas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- External Paint Details -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg border-l-4 border-blue-500">
+                            <div class="flex items-center mb-6">
+                                <i class="fas fa-cloud-sun text-3xl text-blue-500 mr-4"></i>
+                                <h4 class="text-2xl font-bold text-gray-800">Tintas Externas</h4>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-droplet text-blue-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Composição</h5>
+                                        <p class="text-gray-600 text-sm">Resinas acrílicas ou alquídicas, pigmentos resistentes UV, aditivos impermeabilizantes e fungicidas.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-shield-alt text-blue-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Resistência</h5>
+                                        <p class="text-gray-600 text-sm">Alta resistência a UV, chuva, vento, fungos, algas e variações climáticas extremas.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-clock text-blue-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Durabilidade</h5>
+                                        <p class="text-gray-600 text-sm">8-12 anos dependendo da exposição e condições climáticas regionais.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-palette text-blue-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Acabamentos</h5>
+                                        <p class="text-gray-600 text-sm">Predominantemente fosco e acetinado, cores mais estáveis ao sol.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <i class="fas fa-building text-blue-500 mt-1"></i>
+                                    <div>
+                                        <h5 class="font-semibold text-gray-800">Aplicação Ideal</h5>
+                                        <p class="text-gray-600 text-sm">Fachadas, muros externos, estruturas expostas ao tempo e áreas descobertas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quality Lines Comparison -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-gray-800">Comparativo por Linha de Qualidade</h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white rounded-2xl shadow-lg overflow-hidden">
+                        <thead class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left">Característica</th>
+                                <th class="px-6 py-4 text-center">Premium</th>
+                                <th class="px-6 py-4 text-center">Standard</th>
+                                <th class="px-6 py-4 text-center">Econômica</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-gray-800">Cobertura (m²/L)</td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="premium-badge text-white px-3 py-1 rounded-full text-sm font-bold">12-16 m²</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="standard-badge text-white px-3 py-1 rounded-full text-sm font-bold">8-12 m²</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <span class="economical-badge text-white px-3 py-1 rounded-full text-sm font-bold">6-10 m²</span>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-gray-800">Durabilidade</td>
+                                <td class="px-6 py-4 text-center">10-15 anos</td>
+                                <td class="px-6 py-4 text-center">6-10 anos</td>
+                                <td class="px-6 py-4 text-center">3-6 anos</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-gray-800">Resistência ao Desbotamento</td>
+                                <td class="px-6 py-4 text-center">
+                                    <div class="flex justify-center items-center">
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <div class="flex justify-center items-center">
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="far fa-star text-gray-300"></i>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <div class="flex justify-center items-center">
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="fas fa-star text-yellow-500"></i>
+                                        <i class="far fa-star text-gray-300"></i>
+                                        <i class="far fa-star text-gray-300"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-gray-800">Facilidade de Limpeza</td>
+                                <td class="px-6 py-4 text-center text-green-600 font-semibold">Muito Fácil</td>
+                                <td class="px-6 py-4 text-center text-blue-600 font-semibold">Fácil</td>
+                                <td class="px-6 py-4 text-center text-orange-600 font-semibold">Moderada</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-gray-800">Preço por Litro</td>
+                                <td class="px-6 py-4 text-center text-red-600 font-semibold">R$ 80-120</td>
+                                <td class="px-6 py-4 text-center text-blue-600 font-semibold">R$ 45-75</td>
+                                <td class="px-6 py-4 text-center text-green-600 font-semibold">R$ 25-45</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="px-6 py-4 font-semibold text-gray-800">Melhor Aplicação</td>
+                                <td class="px-6 py-4 text-center text-sm">Projetos de alto padrão</td>
+                                <td class="px-6 py-4 text-center text-sm">Residências padrão</td>
+                                <td class="px-6 py-4 text-center text-sm">Reformas básicas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Paint Finishes -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-8 text-gray-800">Acabamentos e Suas Características</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Matte Finish -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-gray-600">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-gray-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-circle text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Fosco</h4>
+                            <div class="text-sm text-gray-600 space-y-2">
+                                <p><strong>Brilho:</strong> 0-10%</p>
+                                <p><strong>Vantagem:</strong> Esconde imperfeições</p>
+                                <p><strong>Uso ideal:</strong> Tetos e paredes internas</p>
+                                <p><strong>Limpeza:</strong> Moderada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Satin Finish -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-blue-500">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-adjust text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Acetinado</h4>
+                            <div class="text-sm text-gray-600 space-y-2">
+                                <p><strong>Brilho:</strong> 20-35%</p>
+                                <p><strong>Vantagem:</strong> Equilibrio ideal</p>
+                                <p><strong>Uso ideal:</strong> Salas e quartos</p>
+                                <p><strong>Limpeza:</strong> Fácil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Semi-gloss Finish -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-yellow-500">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-yellow-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-sun text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Semibrilho</h4>
+                            <div class="text-sm text-gray-600 space-y-2">
+                                <p><strong>Brilho:</strong> 40-60%</p>
+                                <p><strong>Vantagem:</strong> Durabilidade</p>
+                                <p><strong>Uso ideal:</strong> Cozinhas e banheiros</p>
+                                <p><strong>Limpeza:</strong> Muito fácil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gloss Finish -->
+                    <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-red-500">
+                        <div class="text-center">
+                            <div class="w-12 h-12 bg-red-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                                <i class="fas fa-gem text-white"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Brilhante</h4>
+                            <div class="text-sm text-gray-600 space-y-2">
+                                <p><strong>Brilho:</strong> 70-85%</p>
+                                <p><strong>Vantagem:</strong> Máxima proteção</p>
+                                <p><strong>Uso ideal:</strong> Madeiras e metais</p>
+                                <p><strong>Limpeza:</strong> Excelente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <i class="fas fa-palette text-4xl text-blue-400"></i>
+                    <h3 class="text-2xl font-bold">Guia de Tintas Arquitetônicas</h3>
+                </div>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Este guia foi desenvolvido para auxiliar profissionais e entusiastas na escolha e aplicação correta de tintas arquitetônicas, promovendo resultados duradouros e seguros.
+                </p>
+                
+                <!-- Quick Links -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 max-w-2xl mx-auto">
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2">Tipos</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>Internas</li>
+                            <li>Externas</li>
+                            <li>Premium</li>
+                            <li>Econômicas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2">Acabamentos</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>Fosco</li>
+                            <li>Acetinado</li>
+                            <li>Semibrilho</li>
+                            <li>Brilhante</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2">Qualidade</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>PSQ</li>
+                            <li>Certificação</li>
+                            <li>Durabilidade</li>
+                            <li>Performance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2">Dicas</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>Preparação</li>
+                            <li>Aplicação</li>
+                            <li>Manutenção</li>
+                            <li>Cores</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-sm text-gray-400">
+                        © 2024 Guia de Tintas Arquitetônicas. Material educativo para uso profissional e residencial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Navigation Script -->
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('nav-active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+
+        // Card hover effects
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+                this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '';
+            });
+        });
+
+        // FAQ toggle functionality (if needed for interactive version)
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Add interactive functionality if needed
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+</html>

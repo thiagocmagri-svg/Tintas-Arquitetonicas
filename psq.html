@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta name="google-site-verification" content="GZSagLj2LFQT4mFQSpVS5NQXD1hJOq2gq5_PdbFGupU" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo de Tintas Arquitetônicas</title>
+    <meta name="description" content="Descubra as diferenças entre tintas internas, externas, premium, standard e econômicas. Compare durabilidade, cobertura e rendimento e conheça o PSQ.">
+    <meta name="keywords" content="tintas arquitetônicas, tinta interna, tinta externa, tinta premium, tinta standard, PSQ, pintura, acabamento">
+    <meta name="author" content="Thiago Cavalheiro Magri">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .paint-palette {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+            background-size: 600% 600%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .nav-active {
+            color: #4f46e5 !important;
+            border-bottom: 2px solid #4f46e5;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+        
+        .comparison-table {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .premium-badge {
+            background: linear-gradient(45deg, #ffd700, #ffed4a);
+        }
+        
+        .standard-badge {
+            background: linear-gradient(45deg, #60a5fa, #3b82f6);
+        }
+        
+        .economical-badge {
+            background: linear-gradient(45deg, #34d399, #10b981);
+        }
+        
+        .paint-icon {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-item {
+            border-left: 4px solid #4f46e5;
+        }
+        
+        .blog-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .psq-highlight {
+            background: linear-gradient(135deg, #ebf8ff 0%, #dbeafe 100%);
+            border-left: 5px solid #3b82f6;
+        }
+        
+        .internal-paint { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); }
+        .external-paint { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); }
+        .premium-paint { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
+        .standard-paint { background: linear-gradient(135deg, #ddd6fe 0%, #c7d2fe 100%); }
+        .economical-paint { background: linear-gradient(135deg, #d1fae5 0%, #bbf7d0 100%); }
+        
+        @media print {
+            .no-print { display: none !important; }
+            body { font-size: 12px; line-height: 1.4; }
+            .card-hover { box-shadow: none; transform: none; }
+        }
+        
+        .content-section {
+            page-break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="paint-palette text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-palette text-3xl"></i>
+                    <h1 class="text-3xl font-bold">Guia de Tintas Arquitetônicas</h1>
+                </div>
+            </div>
+            <nav class="mt-6">
+                <ul class="flex flex-wrap space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></li>
+                    <li><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></li>
+                    <li><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></li>
+                    <li><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></li>
+                    <li><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+<section id="psq" class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 content-section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6 section-title">PSQ - Programa Setorial da Qualidade</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Entenda como o PSQ garante a qualidade das tintas e como identificar produtos certificados para sua segurança.
+                </p>
+            </div>
+
+            <!-- What is PSQ -->
+            <div class="psq-highlight rounded-2xl p-8 mb-12">
+                <div class="flex items-start space-x-6">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex-shrink-0 flex items-center justify-center">
+                        <i class="fas fa-certificate text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">O que é o PSQ?</h3>
+                        <p class="text-gray-700 mb-4">
+                            O Programa Setorial da Qualidade (PSQ) é uma iniciativa do setor de tintas que estabelece critérios rigorosos de qualidade, performance e segurança para produtos arquitetônicos. Criado em parceria com órgãos reguladores, o PSQ visa proteger o consumidor e promover a melhoria contínua da qualidade das tintas disponíveis no mercado brasileiro.
+                        </p>
+                        <p class="text-gray-700">
+                            Este programa avalia características como cobertura, aderência, durabilidade, resistência e composição química, garantindo que os produtos atendam a padrões internacionais de qualidade e desempenho.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How PSQ Works -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-cogs text-3xl text-blue-600 mr-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800">Como Funciona</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Testes Laboratoriais</h4>
+                                <p class="text-gray-600 text-sm">Análises técnicas rigorosas em laboratórios credenciados avaliam composição, performance e segurança.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Auditorias de Fábrica</h4>
+                                <p class="text-gray-600 text-sm">Inspeções regulares nos processos produtivos garantem conformidade com padrões estabelecidos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Certificação Contínua</h4>
+                                <p class="text-gray-600 text-sm">Monitoramento constante e renovação periódica da certificação mantém a qualidade.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Rastreabilidade</h4>
+                                <p class="text-gray-600 text-sm">Sistema de identificação permite rastrear origem e lote de produção de cada produto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-search text-3xl text-green-600 mr-4"></i>
+                        <h3 class="text-2xl font-bold text-gray-800">Como Identificar</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-tag text-blue-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Selo PSQ na Embalagem</h4>
+                                <p class="text-gray-600 text-sm">Procure pelo selo oficial do PSQ impresso na lata ou galão da tinta.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-barcode text-blue-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Código de Certificação</h4>
+                                <p class="text-gray-600 text-sm">Número único de certificação que pode ser verificado online no site oficial.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-info-circle text-blue-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Informações Técnicas</h4>
+                                <p class="text-gray-600 text-sm">Dados detalhados de performance, cobertura e características técnicas na embalagem.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-globe text-blue-500 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Site Oficial de Consulta</h4>
+                                <p class="text-gray-600 text-sm">Portal online onde é possível verificar autenticidade e status da certificação.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Participating Manufacturers -->
+            <div class="bg-white rounded-2xl p-8 shadow-lg mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Principais Fabricantes Participantes</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <div class="text-center p-4 bg-gray-50 rounded-xl">
+                        <div class="w-16 h-16 bg-red-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Suvinil</h4>
+                        <p class="text-sm text-gray-600">Certificação ativa</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-xl">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Coral</h4>
+                        <p class="text-sm text-gray-600">Certificação ativa</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-xl">
+                        <div class="w-16 h-16 bg-green-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Sherwin-Williams</h4>
+                        <p class="text-sm text-gray-600">Certificação ativa</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-xl">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Eucatex</h4>
+                        <p class="text-sm text-gray-600">Certificação ativa</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-xl">
+                        <div class="w-16 h-16 bg-orange-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Anjo</h4>
+                        <p class="text-sm text-gray-600">Certificação ativa</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-xl">
+                        <div class="w-16 h-16 bg-indigo-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Ypê</h4>
+                        <p class="text-sm text-gray-600">Certificação ativa</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-xl">
+                        <div class="w-16 h-16 bg-pink-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Renner</h4>
+                        <p class="text-sm text-gray-600">Certificação ativa</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded-xl">
+                        <div class="w-16 h-16 bg-teal-500 rounded-full mx-auto mb-3 flex items-center justify-center">
+                            <i class="fas fa-paint-brush text-white text-xl"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800">Glasurit</h4>
+                        <p class="text-sm text-gray-600">Certificação ativa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits for Consumer -->
+            <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8 text-center">Benefícios para o Consumidor</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-2">Garantia de Qualidade</h4>
+                        <p class="text-gray-600 text-sm">Produtos testados e aprovados seguindo critérios técnicos rigorosos.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-dollar-sign text-white text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-2">Melhor Custo-Benefício</h4>
+                        <p class="text-gray-600 text-sm">Informações transparentes sobre rendimento e durabilidade real dos produtos.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-leaf text-white text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-800 mb-2">Segurança Ambiental</h4>
+                        <p class="text-gray-600 text-sm">Controle de substâncias nocivas e conformidade com normas ambientais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <i class="fas fa-palette text-4xl text-blue-400"></i>
+                    <h3 class="text-2xl font-bold">Guia de Tintas Arquitetônicas</h3>
+                </div>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Este guia foi desenvolvido para auxiliar profissionais e entusiastas na escolha e aplicação correta de tintas arquitetônicas, promovendo resultados duradouros e seguros.
+                </p>
+                
+                <!-- Quick Links -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 max-w-2xl mx-auto">
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2">Tipos</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>Internas</li>
+                            <li>Externas</li>
+                            <li>Premium</li>
+                            <li>Econômicas</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2">Acabamentos</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>Fosco</li>
+                            <li>Acetinado</li>
+                            <li>Semibrilho</li>
+                            <li>Brilhante</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2">Qualidade</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>PSQ</li>
+                            <li>Certificação</li>
+                            <li>Durabilidade</li>
+                            <li>Performance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2">Dicas</h4>
+                        <ul class="text-sm text-gray-300 space-y-1">
+                            <li>Preparação</li>
+                            <li>Aplicação</li>
+                            <li>Manutenção</li>
+                            <li>Cores</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-sm text-gray-400">
+                        © 2024 Guia de Tintas Arquitetônicas. Material educativo para uso profissional e residencial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Navigation Script -->
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('nav-active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('nav-active');
+                }
+            });
+        });
+
+        // Card hover effects
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px)';
+                this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '';
+            });
+        });
+
+        // FAQ toggle functionality (if needed for interactive version)
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Add interactive functionality if needed
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+</html>
