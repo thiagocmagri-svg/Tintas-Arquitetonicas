@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintar Paredes Externas | Guia de Tintas Arquitetônicas</title>
+    <meta name="description" content="Guia completo sobre como pintar paredes externas. Saiba escolher a tinta certa, preparar a superfície, proteger sua casa do sol e da chuva, e evitar problemas comuns.">
+    <meta name="keywords" content="pintura externa, tinta para fachada, tinta para exterior, como pintar muro, preparação de parede, tinta acrílica">
+    <meta name="author" content="Thiago Cavalheiro Magri">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .paint-palette {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+            background-size: 600% 600%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .nav-active {
+            color: #4f46e5 !important;
+            border-bottom: 2px solid #4f46e5;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+        
+        .comparison-table {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .premium-badge {
+            background: linear-gradient(45deg, #ffd700, #ffed4a);
+        }
+        
+        .standard-badge {
+            background: linear-gradient(45deg, #60a5fa, #3b82f6);
+        }
+        
+        .economical-badge {
+            background: linear-gradient(45deg, #34d399, #10b981);
+        }
+        
+        .paint-icon {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-item {
+            border-left: 4px solid #4f46e5;
+        }
+        
+        .blog-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .psq-highlight {
+            background: linear-gradient(135deg, #ebf8ff 0%, #dbeafe 100%);
+            border-left: 5px solid #3b82f6;
+        }
+        
+        .internal-paint { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); }
+        .external-paint { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); }
+        .premium-paint { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
+        .standard-paint { background: linear-gradient(135deg, #ddd6fe 0%, #c7d2fe 100%); }
+        .economical-paint { background: linear-gradient(135deg, #d1fae5 0%, #bbf7d0 100%); }
+        
+        @media print {
+            .no-print { display: none !important; }
+            body { font-size: 12px; line-height: 1.4; }
+            .card-hover { box-shadow: none; transform: none; }
+        }
+        
+        .content-section {
+            page-break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="paint-palette text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-palette text-3xl"></i>
+                    <h1 class="text-3xl font-bold">Guia de Tintas Arquitetônicas</h1>
+                </div>
+            </div>
+            <nav class="mt-6">
+                <ul class="flex flex-wrap space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></li>
+                    <li><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></li>
+                    <li><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></li>
+                    <li><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></li>
+                    <li><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></li>
+                    <li><a href="artigos.html" class="hover:text-yellow-200 transition duration-300 nav-link nav-active">Artigos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+      <main class="container mx-auto px-6 py-12">
+        <article class="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12">
+            <header class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-3">Pintar Paredes Externas: Guia Completo para um Acabamento Duradouro</h1>
+                <p class="text-lg text-gray-500">Proteja sua casa com a tinta certa, da preparação à aplicação.</p>
+				<div class="flex items-center text-sm text-gray-500 mb-4">
+				<i class="fas fa-calendar mr-2"></i>
+				<span class="mr-4">2025</span>
+				<i class="fas fa-clock mr-2"></i>
+				<span class="mr-4">Leitura: 5 min</span>
+				<i class="fas fa-user mr-2"></i>
+				<span>Pessoas com projetos de pintura externa</span>
+				</div>
+            </header>
+
+            <section class="prose max-w-none text-gray-700">
+                <p class="text-lg leading-relaxed mb-6">Pintar paredes externas é um investimento importante que protege sua casa das intempéries, como sol, chuva e umidade. Uma pintura bem executada não só valoriza o imóvel, como também garante a durabilidade da estrutura. Mas, para alcançar um resultado profissional, é preciso mais do que apenas um rolo e uma lata de tinta. É um trabalho que exige planejamento, as ferramentas certas e o conhecimento das etapas corretas.</p>
+
+                <div class="section-title text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-6">
+                    <h3>1. Escolha da Tinta Certa: A Base do Sucesso</h3>
+                </div>
+                <p class="mb-4">A tinta para áreas externas precisa ser resistente e flexível para suportar as variações de temperatura e a ação direta do sol e da chuva. As melhores opções são:</p>
+                <ul class="list-disc list-inside space-y-2 mb-6 ml-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                        <p><strong>Tinta Acrílica Premium:</strong> É a mais comum para exteriores. Oferece alta resistência, boa cobertura e durabilidade. As melhores marcas contêm aditivos anti-mofo e anti-algas, ideais para climas úmidos.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                        <p><strong>Tinta Elastomérica:</strong> Ideal para superfícies com pequenas fissuras ou microtrincas. Sua formulação flexível acompanha a dilatação e a contração da parede, prevenindo o surgimento de novas rachaduras e protegendo contra a infiltração de água.</p>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2 flex-shrink-0"></i>
+                        <p><strong>Tinta emborrachada:</strong> Similar à elastomérica, essa tinta é ainda mais flexível e resistente à água. É uma excelente escolha para áreas com grande exposição à chuva, como fachadas e muros.</p>
+                    </li>
+                </ul>
+
+                <div class="section-title text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-6">
+                    <h3>2. Preparação da Superfície: O Segredo da Durabilidade</h3>
+                </div>
+                <p class="mb-6">Não subestime esta etapa. A preparação adequada é crucial para a aderência e a durabilidade da pintura. Siga estes passos:</p>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-inner mb-6">
+                    <ul class="list-decimal list-inside space-y-4 ml-4">
+                        <li>
+                            <strong>Limpeza:</strong> Remova toda a sujeira, mofo, bolor, poeira e teias de aranha. Use uma lavadora de alta pressão se necessário e um detergente neutro.
+                        </li>
+                        <li>
+                            <strong>Lixamento:</strong> Lixe a parede para remover partes soltas de tinta antiga e criar uma superfície uniforme para a nova camada de tinta.
+                        </li>
+                        <li>
+                            <strong>Correção de Imperfeições:</strong> Preencha rachaduras e buracos com massa corrida acrílica (para paredes externas).
+                        </li>
+                        <li>
+                            <strong>Aplicação de Selador ou Fundo Preparador:</strong> Aplique uma camada de selador acrílico ou fundo preparador de paredes. Isso ajuda a selar a superfície, uniformizar a absorção e melhorar a aderência da tinta.
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="section-title text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-6">
+                    <h3>3. Ferramentas Essenciais para Pintura Externa</h3>
+                </div>
+                <p class="mb-4">Ter o material certo economiza tempo e garante um acabamento de qualidade. Não se esqueça de:</p>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-blue-100 p-6 rounded-lg border-l-4 border-blue-500 shadow-sm">
+                        <h4 class="font-semibold text-blue-700 text-lg mb-2 flex items-center"><i class="fas fa-paint-roller mr-2 text-blue-500"></i> Rolos e Pincéis</h4>
+                        <p class="text-gray-700">Escolha rolos de lã de carneiro para tintas acrílicas. Pincéis de cerdas sintéticas são ideais para recortes e áreas de difícil acesso.</p>
+                    </div>
+                    <div class="bg-yellow-100 p-6 rounded-lg border-l-4 border-yellow-500 shadow-sm">
+                        <h4 class="font-semibold text-yellow-700 text-lg mb-2 flex items-center"><i class="fas fa-tape mr-2 text-yellow-500"></i> Fita Crepe e Lona</h4>
+                        <p class="text-gray-700">Proteja esquadrias, portas, janelas e pisos com fita crepe e lonas plásticas. Um pequeno cuidado que evita grandes dores de cabeça.</p>
+                    </div>
+                </div>
+
+                <div class="psq-highlight p-6 rounded-lg my-8">
+                    <h4 class="text-xl font-bold text-blue-900 mb-2 flex items-center"><i class="fas fa-lightbulb text-blue-600 mr-2"></i> Dica de Ouro</h4>
+                    <p class="text-blue-800">Sempre aplique a tinta em dias secos, com temperatura amena. Evite pintar sob sol forte, pois a tinta pode secar rápido demais, formando bolhas e comprometendo o acabamento.</p>
+                </div>
+                
+                <div class="section-title text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-6">
+                    <h3>4. Passo a Passo da Aplicação da Tinta</h3>
+                </div>
+                <p class="mb-4">Com a superfície preparada e as ferramentas em mãos, siga a sequência abaixo:</p>
+                <ul class="list-decimal list-inside space-y-4 mb-6 ml-4">
+                    <li>
+                        <strong>Primeira Demão:</strong> Comece pelos recortes com um pincel e, em seguida, aplique a tinta com o rolo nas grandes áreas. Aplique em camadas finas e uniformes, respeitando o tempo de secagem indicado pelo fabricante.
+                    </li>
+                    <li>
+                        <strong>Segunda Demão:</strong> Após o tempo de cura, aplique a segunda demão para garantir uma cobertura completa e a durabilidade da cor. Para a maioria das tintas, duas demãos são suficientes.
+                    </li>
+                    <li>
+                        <strong>Limpeza:</strong> Lave bem os rolos e pincéis e descarte os materiais de proteção.
+                    </li>
+                </ul>
+                
+                <p class="text-lg leading-relaxed mb-6 mt-8">Seguindo essas etapas, você não só terá uma casa com uma aparência renovada, mas também protegida contra o desgaste do tempo. Uma pintura externa bem-feita é o escudo da sua casa contra o sol e a chuva.</p>
+            </section>
+        </article>
+    
+<div class="text-center mt-12">
+<a class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition" href="artigos.html">
+<i class="fas fa-arrow-left mr-2"></i> Voltar para Índice de Artigos
+            </a>
+</div>
+</main>
+<footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <i class="fas fa-palette text-4xl text-blue-400"></i>
+                    <h3 class="text-2xl font-bold">Guia de Tintas Arquitetônicas</h3>
+                </div>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Este guia foi desenvolvido para auxiliar profissionais e entusiastas na escolha e aplicação correta de tintas arquitetônicas, promovendo resultados duradouros e seguros.
+                </p>
+                
+                <!-- Quick Links -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 max-w-2xl mx-auto">
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></h4>
+                    </div>
+					<div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></h4>
+                    </div>
+					<div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="artigos.html" class="hover:text-yellow-200 transition duration-300 nav-link">Artigos</a></h4>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-sm text-gray-400">
+                        © 2025 Guia de Tintas Arquitetônicas. Material educativo para uso profissional e residencial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

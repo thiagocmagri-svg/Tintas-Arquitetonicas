@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	    <meta name="google-site-verification" content="GZSagLj2LFQT4mFQSpVS5NQXD1hJOq2gq5_PdbFGupU" />
+		<meta name="description" content="Saiba como preparar a parede antes de pintar. Aprenda sobre lixamento, selador e massa corrida para garantir que a sua pintura tenha um acabamento perfeito e duradouro. Guia para iniciantes">
+		<meta name="keywords" content="preparação de parede, como lixar parede, selador, massa corrida, como pintar parede, passo a passo de pintura">
+		<meta name="author" content="Thiago Cavalheiro Magri">
+<title>
+  Blog - Guia de Tintas Arquitetônicas
+ </title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .paint-palette {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+            background-size: 600% 600%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .nav-active {
+            color: #4f46e5 !important;
+            border-bottom: 2px solid #4f46e5;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+        
+        .comparison-table {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .premium-badge {
+            background: linear-gradient(45deg, #ffd700, #ffed4a);
+        }
+        
+        .standard-badge {
+            background: linear-gradient(45deg, #60a5fa, #3b82f6);
+        }
+        
+        .economical-badge {
+            background: linear-gradient(45deg, #34d399, #10b981);
+        }
+        
+        .paint-icon {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-item {
+            border-left: 4px solid #4f46e5;
+        }
+        
+        .blog-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .psq-highlight {
+            background: linear-gradient(135deg, #ebf8ff 0%, #dbeafe 100%);
+            border-left: 5px solid #3b82f6;
+        }
+        
+        .internal-paint { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); }
+        .external-paint { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); }
+        .premium-paint { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
+        .standard-paint { background: linear-gradient(135deg, #ddd6fe 0%, #c7d2fe 100%); }
+        .economical-paint { background: linear-gradient(135deg, #d1fae5 0%, #bbf7d0 100%); }
+        
+        @media print {
+            .no-print { display: none !important; }
+            body { font-size: 12px; line-height: 1.4; }
+            .card-hover { box-shadow: none; transform: none; }
+        }
+        
+        .content-section {
+            page-break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="paint-palette text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-palette text-3xl"></i>
+                    <h1 class="text-3xl font-bold">Guia de Tintas Arquitetônicas</h1>
+                </div>
+            </div>
+            <nav class="mt-6">
+                <ul class="flex flex-wrap space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></li>
+                    <li><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></li>
+                    <li><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></li>
+                    <li><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></li>
+                    <li><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></li>
+					<li><a href="artigos.html" class="hover:text-yellow-200 transition duration-300 nav-link">Artigos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<main class="container mx-auto px-4 py-8">
+<article class="bg-white rounded-lg shadow-lg p-8 mb-12" id="artigo3">
+<header class="mb-8">
+<div class="article-gradient p-6 rounded-lg mb-6">
+<h1 class="text-3xl font-bold text-gray-800 mb-3">
+<i class="fas fa-hammer text-red-600 mr-3"></i>
+                        Guia Completo de Preparação de Paredes
+                    </h1>
+<p class="text-gray-600 text-lg">A base perfeita para uma pintura duradoura e profissional</p>
+</div>
+<div class="flex items-center text-sm text-gray-500 mb-4">
+<i class="fas fa-calendar mr-2"></i>
+<span class="mr-4">2025</span>
+<i class="fas fa-clock mr-2"></i>
+<span class="mr-4">Leitura: 3 min</span>
+<i class="fas fa-user mr-2"></i>
+<span>Iniciantes em pintura e projetos "faça você mesmo" (DIY)</span>
+</div>
+</header>
+<div class="prose max-w-none">
+<div class="highlight-box p-6 rounded-lg mb-6">
+<h4 class="font-bold text-lg mb-3">
+<i class="fas fa-foundation text-red-600 mr-2"></i>
+                        Por Que a Preparação é Crucial?
+                    </h4>
+<p class="mb-0">Uma preparação adequada representa 70% do sucesso de uma pintura. Economizar nesta etapa significa comprometer durabilidade, acabamento e ter que refazer o trabalho em poucos anos. Cada superfície exige técnicas específicas para garantir aderência perfeita.</p>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">
+<i class="fas fa-search text-red-600 mr-2"></i>
+                    1. Diagnóstico da Superfície
+                </h3>
+<h4 class="text-xl font-medium text-gray-700 mb-3">Teste de Aderência</h4>
+<div class="bg-gray-100 p-6 rounded-lg mb-6">
+<ol class="space-y-3">
+<li class="flex items-start">
+<span class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 mt-1">1</span>
+<span><strong>Teste da fita:</strong> Cole fita adesiva e puxe bruscamente</span>
+</li>
+<li class="flex items-start">
+<span class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 mt-1">2</span>
+<span><strong>Análise:</strong> Se descascar, remova toda a tinta solta</span>
+</li>
+<li class="flex items-start">
+<span class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3 mt-1">3</span>
+<span><strong>Teste de absorção:</strong> Pingue água - se absorver rápido, precisa selador</span>
+</li>
+</ol>
+</div>
+<h4 class="text-xl font-medium text-gray-700 mb-3">Identificação de Problemas</h4>
+<div class="grid md:grid-cols-3 gap-4 mb-8">
+<div class="warning-box p-4 rounded-lg text-center">
+<i class="fas fa-exclamation-triangle text-3xl text-red-600 mb-3"></i>
+<h5 class="font-bold mb-2">Umidade</h5>
+<p class="text-sm">Manchas escuras, descascamento, mofo</p>
+</div>
+<div class="warning-box p-4 rounded-lg text-center">
+<i class="fas fa-cracks text-3xl text-red-600 mb-3"></i>
+<h5 class="font-bold mb-2">Fissuras</h5>
+<p class="text-sm">Rachaduras, trincas estruturais</p>
+</div>
+<div class="warning-box p-4 rounded-lg text-center">
+<i class="fas fa-layer-group text-3xl text-red-600 mb-3"></i>
+<h5 class="font-bold mb-2">Múltiplas Camadas</h5>
+<p class="text-sm">Textura irregular, acúmulo de tinta</p>
+</div>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">
+<i class="fas fa-tools text-red-600 mr-2"></i>
+                    2. Ferramentas e Materiais Essenciais
+                </h3>
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+<div class="tip-box p-6 rounded-lg">
+<h4 class="font-bold text-lg mb-4">
+<i class="fas fa-toolbox text-blue-600 mr-2"></i>
+                            Ferramentas Básicas
+                        </h4>
+<ul class="space-y-2 text-sm">
+<li>• Espátulas (4", 6", 10")</li>
+<li>• Lixa d'água (grãos 120, 220, 400)</li>
+<li>• Trincha para limpeza</li>
+<li>• Rolo de espuma para primer</li>
+<li>• Desempenadeira de aço</li>
+<li>• Furadeira com disco de lixa</li>
+</ul>
+</div>
+<div class="tip-box p-6 rounded-lg">
+<h4 class="font-bold text-lg mb-4">
+<i class="fas fa-flask text-blue-600 mr-2"></i>
+                            Produtos Químicos
+                        </h4>
+<ul class="space-y-2 text-sm">
+<li>• Removedor de tinta (gel ou líquido)</li>
+<li>• Desengraxante alcalino</li>
+<li>• Neutralizador de ferrugem</li>
+<li>• Selador concentrado</li>
+<li>• Massa PVA e acrílica</li>
+<li>• Primer específico por superfície</li>
+</ul>
+</div>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">
+<i class="fas fa-clipboard-list text-red-600 mr-2"></i>
+                    3. Processo Step-by-Step
+                </h3>
+<h4 class="text-xl font-medium text-gray-700 mb-3">Etapa 1: Limpeza Profunda</h4>
+<div class="bg-blue-50 p-6 rounded-lg mb-6 border-l-4 border-blue-600">
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="fas fa-spray-can text-blue-600 mr-3 mt-1"></i>
+<span><strong>Desengraxante:</strong> Aplique solução 1:5 com água, deixe agir 10 min</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-scrub text-blue-600 mr-3 mt-1"></i>
+<span><strong>Escovação:</strong> Use escova de cerdas médias em movimentos circulares</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-shower text-blue-600 mr-3 mt-1"></i>
+<span><strong>Enxágue:</strong> Água abundante, seque com pano limpo</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-clock text-blue-600 mr-3 mt-1"></i>
+<span><strong>Secagem:</strong> Aguarde 24h em ambiente ventilado</span>
+</li>
+</ul>
+</div>
+<h4 class="text-xl font-medium text-gray-700 mb-3">Etapa 2: Remoção de Tinta Solta</h4>
+<div class="bg-green-50 p-6 rounded-lg mb-6 border-l-4 border-green-600">
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="fas fa-hammer text-green-600 mr-3 mt-1"></i>
+<span><strong>Raspagem:</strong> Espátula rígida em ângulo de 30°</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-fire text-green-600 mr-3 mt-1"></i>
+<span><strong>Removedor químico:</strong> Para camadas espessas, aguarde 20-30 min</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-tools text-green-600 mr-3 mt-1"></i>
+<span><strong>Lixamento mecânico:</strong> Disco abrasivo grão 80 para grandes áreas</span>
+</li>
+</ul>
+</div>
+<h4 class="text-xl font-medium text-gray-700 mb-3">Etapa 3: Correção de Imperfeições</h4>
+<div class="bg-yellow-50 p-6 rounded-lg mb-6 border-l-4 border-yellow-600">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<h5 class="font-semibold mb-3 text-yellow-800">Fissuras Pequenas (&lt; 2mm)</h5>
+<ul class="space-y-2 text-sm">
+<li>• Massa PVA com espátula pequena</li>
+<li>• Aplicar em "X" sobre a fissura</li>
+<li>• Lixar após 4h de secagem</li>
+<li>• Segunda aplicação se necessário</li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold mb-3 text-yellow-800">Fissuras Grandes (&gt; 2mm)</h5>
+<ul class="space-y-2 text-sm">
+<li>• Abrir fissura com espatula</li>
+<li>• Tela de fibra de vidro</li>
+<li>• Massa acrílica em camadas</li>
+<li>• Lixamento final grão 220</li>
+</ul>
+</div>
+</div>
+</div>
+<h4 class="text-xl font-medium text-gray-700 mb-3">Etapa 4: Lixamento e Selagem</h4>
+<div class="bg-purple-50 p-6 rounded-lg mb-6 border-l-4 border-purple-600">
+<div class="space-y-4">
+<div>
+<h5 class="font-semibold mb-2 text-purple-800">Sequência de Lixas</h5>
+<div class="grid grid-cols-3 gap-4 text-center">
+<div class="p-3 bg-white rounded border">
+<div class="font-bold text-lg text-purple-600">120</div>
+<div class="text-xs">Desbaste inicial</div>
+</div>
+<div class="p-3 bg-white rounded border">
+<div class="font-bold text-lg text-purple-600">220</div>
+<div class="text-xs">Acabamento</div>
+</div>
+<div class="p-3 bg-white rounded border">
+<div class="font-bold text-lg text-purple-600">400</div>
+<div class="text-xs">Finalização</div>
+</div>
+</div>
+</div>
+<div>
+<h5 class="font-semibold mb-2 text-purple-800">Aplicação do Selador</h5>
+<ul class="space-y-2 text-sm">
+<li>• Diluição: 1:1 para primeira demão</li>
+<li>• Aplicação: rolo de espuma em camadas cruzadas</li>
+<li>• Secagem: 4-6h entre demãos</li>
+<li>• Segunda demão: selador puro</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">
+<i class="fas fa-microscope text-red-600 mr-2"></i>
+                    4. Preparação Específica por Tipo de Superfície
+                </h3>
+<div class="space-y-6">
+<div class="border rounded-lg overflow-hidden">
+<div class="bg-gray-100 p-4 border-b">
+<h4 class="font-bold text-lg flex items-center">
+<i class="fas fa-home text-blue-600 mr-3"></i>
+                                Paredes de Alvenaria Nova
+                            </h4>
+</div>
+<div class="p-6">
+<div class="grid md:grid-cols-2 gap-4">
+<div>
+<h5 class="font-semibold mb-2">Preparação</h5>
+<ul class="text-sm space-y-1">
+<li>• Aguardar cura completa (30 dias)</li>
+<li>• Escovação para remoção de pó</li>
+<li>• Correção de imperfeições com massa</li>
+<li>• Selador concentrado 1:1</li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold mb-2">Produtos Recomendados</h5>
+<ul class="text-sm space-y-1">
+<li>• Selador Acrílico Concentrado</li>
+<li>• Massa PVA para acabamento</li>
+<li>• Primer High Build para texturas</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="border rounded-lg overflow-hidden">
+<div class="bg-gray-100 p-4 border-b">
+<h4 class="font-bold text-lg flex items-center">
+<i class="fas fa-tree text-green-600 mr-3"></i>
+                                Madeira e MDF
+                            </h4>
+</div>
+<div class="p-6">
+<div class="grid md:grid-cols-2 gap-4">
+<div>
+<h5 class="font-semibold mb-2">Preparação</h5>
+<ul class="text-sm space-y-1">
+<li>• Lixamento seguindo as fibras</li>
+<li>• Remoção total do pó</li>
+<li>• Selador para madeira em 2 demãos</li>
+<li>• Lixamento entre demãos (lixa 320)</li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold mb-2">Produtos Recomendados</h5>
+<ul class="text-sm space-y-1">
+<li>• Selador Nitrocelulose</li>
+<li>• Massa para madeira</li>
+<li>• Primer PU High Performance</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="border rounded-lg overflow-hidden">
+<div class="bg-gray-100 p-4 border-b">
+<h4 class="font-bold text-lg flex items-center">
+<i class="fas fa-industry text-gray-600 mr-3"></i>
+                                Superfícies Metálicas
+                            </h4>
+</div>
+<div class="p-6">
+<div class="grid md:grid-cols-2 gap-4">
+<div>
+<h5 class="font-semibold mb-2">Preparação</h5>
+<ul class="text-sm space-y-1">
+<li>• Remoção total de ferrugem</li>
+<li>• Jateamento ou lixamento até metal limpo</li>
+<li>• Desengraxante específico</li>
+<li>• Primer anticorrosivo imediato</li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold mb-2">Produtos Recomendados</h5>
+<ul class="text-sm space-y-1">
+<li>• Convertedor de Ferrugem</li>
+<li>• Primer Epóxi Anticorrosivo</li>
+<li>• Zarcão para proteção extra</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">
+<i class="fas fa-exclamation-triangle text-red-600 mr-2"></i>
+                    5. Erros Críticos a Evitar
+                </h3>
+<div class="warning-box p-6 rounded-lg mb-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<h4 class="font-bold text-red-800 mb-3">❌ Nunca Faça</h4>
+<ul class="space-y-2 text-sm">
+<li>• Pintar sobre superfície úmida</li>
+<li>• Pular a etapa de limpeza</li>
+<li>• Usar primer errado para o substrato</li>
+<li>• Lixar demais e criar ondulações</li>
+<li>• Misturar produtos de marcas diferentes</li>
+<li>• Pressa entre etapas de secagem</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-green-800 mb-3">✅ Sempre Faça</h4>
+<ul class="space-y-2 text-sm">
+<li>• Teste de aderência antes de começar</li>
+<li>• Proteção de áreas adjacentes</li>
+<li>• Documentação das etapas executadas</li>
+<li>• Controle de temperatura e umidade</li>
+<li>• Inspeção final com boa iluminação</li>
+<li>• Limpeza completa dos equipamentos</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 class="text-2xl font-semibold text-gray-800 mb-4 mt-8">
+<i class="fas fa-medal text-red-600 mr-2"></i>
+                    6. Checklist de Qualidade Final
+                </h3>
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="grid md:grid-cols-3 gap-6">
+<div>
+<h5 class="font-bold mb-3 text-center">Aspecto Visual</h5>
+<ul class="text-sm space-y-2">
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Superfície uniforme</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Sem marcas de lixa</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Cor homogênea do primer</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Bordas bem definidas</li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-3 text-center">Aspecto Técnico</h5>
+<ul class="text-sm space-y-2">
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Aderência perfeita</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Secagem completa</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Espessura adequada</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> pH neutralizado</li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-3 text-center">Preparação para Pintura</h5>
+<ul class="text-sm space-y-2">
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Ambiente limpo</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Proteções instaladas</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Ferramentas limpas</li>
+<li class="flex items-center"><i class="fas fa-check text-green-600 mr-2"></i> Produtos organizados</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+
+<div class="text-center mt-12">
+<a class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition" href="artigos.html">
+<i class="fas fa-arrow-left mr-2"></i> Voltar para Índice de Artigos
+            </a>
+</div>
+</main>
+<footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <i class="fas fa-palette text-4xl text-blue-400"></i>
+                    <h3 class="text-2xl font-bold">Guia de Tintas Arquitetônicas</h3>
+                </div>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Este guia foi desenvolvido para auxiliar profissionais e entusiastas na escolha e aplicação correta de tintas arquitetônicas, promovendo resultados duradouros e seguros.
+                </p>
+                
+                <!-- Quick Links -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 max-w-2xl mx-auto">
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></h4>
+                    </div>
+					<div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></h4>
+                    </div>
+					<div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="artigos.html" class="hover:text-yellow-200 transition duration-300 nav-link">Artigos</a></h4>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-sm text-gray-400">
+                        © 2025 Guia de Tintas Arquitetônicas. Material educativo para uso profissional e residencial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

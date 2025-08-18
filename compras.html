@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugestões de Compras de Tintas</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    }
+    .section-title {
+      position: relative;
+      display: inline-block;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Header -->
+  <header class="text-white shadow-lg bg-gradient-to-r from-blue-600 to-indigo-600">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex items-center space-x-4">
+        <i class="fas fa-shopping-cart text-3xl"></i>
+        <h1 class="text-3xl font-bold">Sugestões de Compras de Tintas</h1>
+      </div>
+      <nav class="mt-4">
+        <ul class="flex flex-wrap space-x-6 text-lg">
+          <li><a href="index.html" class="hover:text-yellow-200 transition">Início</a></li>
+          <li><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition">Tipos</a></li>
+          <li><a href="psq.html" class="hover:text-yellow-200 transition">PSQ</a></li>
+          <li><a href="compras.html" class="text-yellow-200 font-semibold">Compras</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo -->
+  <main class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="container mx-auto px-4">
+
+      <!-- PREMIUM -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 section-title">Tintas Premium</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Exemplo: Suvinil Premium -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <img src="imagens/suvinil.png" alt="Suvinil" class="h-14 mx-auto mb-4 object-contain">
+            <h3 class="text-lg font-bold text-gray-800 mb-1">Suvinil Toque de Seda</h3>
+            <p class="text-sm text-gray-600 mb-2">Ambiente: Interno • Acabamento: Acetinado</p>
+            <p class="text-gray-500 text-xs mb-4">Premium • Alta cobertura e durabilidade</p>
+            <a href="https://www.amazon.com.br/s?k=tinta+suvinil+premium+acetinado" target="_blank" 
+               class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Ver preço na Amazon
+            </a>
+          </div>
+
+          <!-- Coral Premium -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <img src="imagens/coral.png" alt="Coral" class="h-14 mx-auto mb-4 object-contain">
+            <h3 class="text-lg font-bold text-gray-800 mb-1">Coral Decora</h3>
+            <p class="text-sm text-gray-600 mb-2">Ambiente: Interno • Acabamento: Fosco</p>
+            <p class="text-gray-500 text-xs mb-4">Premium • Fácil limpeza e ótima cobertura</p>
+            <a href="https://www.amazon.com.br/s?k=tinta+coral+decora+fosco" target="_blank" 
+               class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Ver preço na Amazon
+            </a>
+          </div>
+
+          <!-- Sherwin Premium -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <img src="imagens/sherwin.png" alt="Sherwin-Williams" class="h-14 mx-auto mb-4 object-contain">
+            <h3 class="text-lg font-bold text-gray-800 mb-1">Sherwin-Williams Aquacryl</h3>
+            <p class="text-sm text-gray-600 mb-2">Ambiente: Externo • Acabamento: Semibrilho</p>
+            <p class="text-gray-500 text-xs mb-4">Premium • Resistência a intempéries</p>
+            <a href="https://www.amazon.com.br/s?k=tinta+sherwin+williams+aquacryl+semibrilho" target="_blank" 
+               class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Ver preço na Amazon
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- STANDARD -->
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 section-title">Tintas Standard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <img src="imagens/coral.png" alt="Coral" class="h-14 mx-auto mb-4 object-contain">
+            <h3 class="text-lg font-bold text-gray-800 mb-1">Coral Rende Muito</h3>
+            <p class="text-sm text-gray-600 mb-2">Ambiente: Interno • Acabamento: Fosco</p>
+            <p class="text-gray-500 text-xs mb-4">Standard • Boa cobertura e rendimento</p>
+            <a href="https://www.amazon.com.br/s?k=coral+rende+muito+fosco" target="_blank" 
+               class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Ver preço na Amazon
+            </a>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <img src="imagens/eucatex.png" alt="Eucatex" class="h-14 mx-auto mb-4 object-contain">
+            <h3 class="text-lg font-bold text-gray-800 mb-1">Eucatex Standard</h3>
+            <p class="text-sm text-gray-600 mb-2">Ambiente: Interno • Acabamento: Acetinado</p>
+            <p class="text-gray-500 text-xs mb-4">Standard • Ótimo custo-benefício</p>
+            <a href="https://www.amazon.com.br/s?k=tinta+eucatex+standard+acetinado" target="_blank" 
+               class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Ver preço na Amazon
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ECONÔMICAS -->
+      <div>
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 section-title">Tintas Econômicas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <img src="imagens/suvinil.png" alt="Suvinil" class="h-14 mx-auto mb-4 object-contain">
+            <h3 class="text-lg font-bold text-gray-800 mb-1">Suvinil Econômica</h3>
+            <p class="text-sm text-gray-600 mb-2">Ambiente: Interno • Acabamento: Fosco</p>
+            <p class="text-gray-500 text-xs mb-4">Econômica • Boa opção para baixo custo</p>
+            <a href="https://www.amazon.com.br/s?k=tinta+suvinil+economica+fosco" target="_blank" 
+               class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Ver preço na Amazon
+            </a>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+            <img src="imagens/eucatex.png" alt="Eucatex" class="h-14 mx-auto mb-4 object-contain">
+            <h3 class="text-lg font-bold text-gray-800 mb-1">Eucatex Eucalar</h3>
+            <p class="text-sm text-gray-600 mb-2">Ambiente: Interno • Acabamento: Fosco</p>
+            <p class="text-gray-500 text-xs mb-4">Econômica • Fácil aplicação</p>
+            <a href="https://www.amazon.com.br/s?k=tinta+eucatex+eucalar+fosco" target="_blank" 
+               class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+              Ver preço na Amazon
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-800 text-white py-8 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-300">© 2024 Guia de Tintas Arquitetônicas - Recomendações de compra com base em fabricantes participantes do PSQ.</p>
+    </div>
+  </footer>
+</body>
+</html>

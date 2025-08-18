@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="google-site-verification" content="GZSagLj2LFQT4mFQSpVS5NQXD1hJOq2gq5_PdbFGupU" />
+		<meta name="description" content="Leia artigos aprofundados sobre o universo das tintas e pintura. Conteúdos técnicos e de inspiração para você dominar a arte de pintar, desde a preparação até o acabamento perfeito">
+		<meta name="keywords" content="artigos sobre tinta, guias de pintura, conteúdos técnicos, pintura de ambientes, como escolher tinta">
+		<meta name="author" content="Thiago Cavalheiro Magri">
+    <title>Artigos - Guia de Tintas Arquitetônicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .paint-palette {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+            background-size: 600% 600%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .nav-active {
+            color: #4f46e5 !important;
+            border-bottom: 2px solid #4f46e5;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+        
+        .comparison-table {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .premium-badge {
+            background: linear-gradient(45deg, #ffd700, #ffed4a);
+        }
+        
+        .standard-badge {
+            background: linear-gradient(45deg, #60a5fa, #3b82f6);
+        }
+        
+        .economical-badge {
+            background: linear-gradient(45deg, #34d399, #10b981);
+        }
+        
+        .paint-icon {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-item {
+            border-left: 4px solid #4f46e5;
+        }
+        
+        .blog-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .psq-highlight {
+            background: linear-gradient(135deg, #ebf8ff 0%, #dbeafe 100%);
+            border-left: 5px solid #3b82f6;
+        }
+        
+        .internal-paint { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); }
+        .external-paint { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); }
+        .premium-paint { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
+        .standard-paint { background: linear-gradient(135deg, #ddd6fe 0%, #c7d2fe 100%); }
+        .economical-paint { background: linear-gradient(135deg, #d1fae5 0%, #bbf7d0 100%); }
+        
+        @media print {
+            .no-print { display: none !important; }
+            body { font-size: 12px; line-height: 1.4; }
+            .card-hover { box-shadow: none; transform: none; }
+        }
+        
+        .content-section {
+            page-break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="paint-palette text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-palette text-3xl"></i>
+                    <h1 class="text-3xl font-bold">Guia de Tintas Arquitetônicas</h1>
+                </div>
+            </div>
+            <nav class="mt-6">
+                <ul class="flex flex-wrap space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></li>
+                    <li><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></li>
+                    <li><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></li>
+                    <li><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></li>
+                    <li><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></li>
+					<li><a href="artigos.html" class="hover:text-yellow-200 transition duration-300 nav-link">Artigos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="articles-container" class="container mx-auto px-4 py-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Os artigos serão carregados dinamicamente -->
+    </main>
+
+    <script>
+        // Lista de artigos disponíveis (detecta arquivos artigoX.html automaticamente)
+        const articles = [
+            { file: "artigo1.html", title: "Guia Completo para Banheiros Anti-Mofo" },
+            { file: "artigo2.html", title: "Cores de Tinta que Ampliam Ambientes Pequenos" },
+            { file: "artigo3.html", title: "Preparação de Paredes: O Segredo de uma Pintura Perfeita" },
+            { file: "artigo4.html", title: "As Vantagens das Tintas Ecológicas" },
+            { file: "artigo5.html", title: "Guia Completo para Pintar Paredes Externas" },
+            { file: "artigo6.html", title: "Qual Acabamento de Tinta Escolher?" },
+            { file: "artigo7.html", title: "Pintura de Teto: Guia Prático para um Acabamento Perfeito" },
+            { file: "artigo8.html", title: "Problemas de Pintura: Como Resolver e Evitar" },
+            { file: "artigo9.html", title: "Pintando Madeira e Ferro: O Guia Completo" },
+            { file: "artigo10.html", title: "Guia Completo de Tinta para Piso" }
+        ];
+
+        const container = document.getElementById("articles-container");
+
+        articles.forEach(article => {
+            const card = document.createElement("a");
+            card.href = article.file;
+            card.className = "card hover:shadow-lg transition";
+
+            const title = document.createElement("h2");
+            title.className = "text-xl font-bold mb-2 text-gray-800";
+            title.innerText = article.title;
+
+            const desc = document.createElement("p");
+            desc.className = "text-sm text-gray-600";
+            desc.innerText = "Clique para ler este artigo completo.";
+
+            card.appendChild(title);
+            card.appendChild(desc);
+            container.appendChild(card);
+        });
+    </script>
+<footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <i class="fas fa-palette text-4xl text-blue-400"></i>
+                    <h3 class="text-2xl font-bold">Guia de Tintas Arquitetônicas</h3>
+                </div>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Este guia foi desenvolvido para auxiliar profissionais e entusiastas na escolha e aplicação correta de tintas arquitetônicas, promovendo resultados duradouros e seguros.
+                </p>
+                
+                <!-- Quick Links -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 max-w-2xl mx-auto">
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></h4>
+                    </div>
+					<div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></h4>
+                    </div>
+					<div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="artigos.html" class="hover:text-yellow-200 transition duration-300 nav-link">Artigos</a></h4>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-sm text-gray-400">
+                        © 2025 Guia de Tintas Arquitetônicas. Material educativo para uso profissional e residencial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

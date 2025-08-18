@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas de Pintura | Bolhas, Descascamento e Manchas</title>
+    <meta name="description" content="Soluções para os problemas mais comuns na hora de pintar, como bolhas, descascamento, manchas e mofo. Aprenda a corrigir e evitar esses contratempos.">
+    <meta name="keywords" content="problemas de pintura, bolhas na tinta, tinta descascando, manchas na parede, pintura com mofo, como consertar pintura">
+    <meta name="author" content="Thiago Cavalheiro Magri">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .paint-palette {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+            background-size: 600% 600%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .nav-active {
+            color: #4f46e5 !important;
+            border-bottom: 2px solid #4f46e5;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+        
+        .comparison-table {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .premium-badge {
+            background: linear-gradient(45deg, #ffd700, #ffed4a);
+        }
+        
+        .standard-badge {
+            background: linear-gradient(45deg, #60a5fa, #3b82f6);
+        }
+        
+        .economical-badge {
+            background: linear-gradient(45deg, #34d399, #10b981);
+        }
+        
+        .paint-icon {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .faq-item {
+            border-left: 4px solid #4f46e5;
+        }
+        
+        .blog-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .psq-highlight {
+            background: linear-gradient(135deg, #ebf8ff 0%, #dbeafe 100%);
+            border-left: 5px solid #3b82f6;
+        }
+        
+        .internal-paint { background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%); }
+        .external-paint { background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); }
+        .premium-paint { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
+        .standard-paint { background: linear-gradient(135deg, #ddd6fe 0%, #c7d2fe 100%); }
+        .economical-paint { background: linear-gradient(135deg, #d1fae5 0%, #bbf7d0 100%); }
+        
+        @media print {
+            .no-print { display: none !important; }
+            body { font-size: 12px; line-height: 1.4; }
+            .card-hover { box-shadow: none; transform: none; }
+        }
+        
+        .content-section {
+            page-break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="paint-palette text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-palette text-3xl"></i>
+                    <h1 class="text-3xl font-bold">Guia de Tintas Arquitetônicas</h1>
+                </div>
+            </div>
+            <nav class="mt-6">
+                <ul class="flex flex-wrap space-x-8 text-lg">
+                    <li><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></li>
+                    <li><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></li>
+                    <li><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></li>
+                    <li><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></li>
+                    <li><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></li>
+                    <li><a href="artigos.html" class="hover:text-yellow-200 transition duration-300 nav-link nav-active">Artigos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-12">
+        <article class="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12">
+            <header class="mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-3">Problemas Comuns de Pintura: Guia de Soluções</h1>
+                <p class="text-lg text-gray-500">Aprenda a identificar, corrigir e evitar bolhas, descascamento, manchas e mofo nas suas paredes.</p>
+			<div class="flex items-center text-sm text-gray-500 mb-4">
+				<i class="fas fa-calendar mr-2"></i>
+				<span class="mr-4">2025</span>
+				<i class="fas fa-clock mr-2"></i>
+				<span class="mr-4">Leitura: 5 min</span>
+				<i class="fas fa-user mr-2"></i>
+				<span>Pessoas que precisam resolver problemas de pintura</span>
+				</div> 
+            </header>
+
+            <section class="prose max-w-none text-gray-700">
+                <p class="text-lg leading-relaxed mb-6">Mesmo com todo o planejamento, problemas podem surgir durante ou após a pintura. Entender a causa de cada um é o primeiro passo para encontrar a solução. Conheça os contratempos mais comuns e como resolvê-los para garantir um acabamento perfeito e duradouro.</p>
+
+                <div class="section-title text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-6">
+                    <h3>1. Bolhas na Tinta</h3>
+                </div>
+                <div class="bg-red-100 p-6 rounded-lg border-l-4 border-red-500 shadow-sm mb-6">
+                    <h4 class="font-bold text-lg text-red-700 mb-2 flex items-center"><i class="fas fa-circle-notch mr-2"></i> Causa</h4>
+                    <p>As bolhas geralmente são causadas por umidade ou vapor de água, que tentam sair da parede e empurram a película de tinta. Também pode ocorrer por sujeira, gordura ou poeira na superfície antes da pintura.</p>
+                    <h4 class="font-bold text-lg text-red-700 mt-4 mb-2 flex items-center"><i class="fas fa-tools mr-2"></i> Solução</h4>
+                    <ul class="list-disc list-inside space-y-2 mb-4 ml-4">
+                        <li>Remova as bolhas com uma espátula.</li>
+                        <li>Lixe a área para deixá-la lisa.</li>
+                        <li>Aplique um selador ou fundo preparador para uniformizar a superfície e prevenir nova umidade.</li>
+                        <li>Repinte a área.</li>
+                    </ul>
+                </div>
+
+                <div class="section-title text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-6">
+                    <h3>2. Descascamento</h3>
+                </div>
+                <div class="bg-red-100 p-6 rounded-lg border-l-4 border-red-500 shadow-sm mb-6">
+                    <h4 class="font-bold text-lg text-red-700 mb-2 flex items-center"><i class="fas fa-minus-circle mr-2"></i> Causa</h4>
+                    <p>O descascamento acontece quando a tinta não adere corretamente à superfície. As causas podem ser:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 mb-4 ml-4">
+                        <li>Pintura sobre superfície suja, úmida ou com mofo.</li>
+                        <li>Uso de tinta de baixa qualidade.</li>
+                        <li>Incompatibilidade entre as camadas de tinta.</li>
+                    </ul>
+                    <h4 class="font-bold text-lg text-red-700 mt-4 mb-2 flex items-center"><i class="fas fa-tools mr-2"></i> Solução</h4>
+                    <ul class="list-disc list-inside space-y-2 mb-4 ml-4">
+                        <li>Remova toda a tinta solta com uma espátula e lixa.</li>
+                        <li>Limpe bem a superfície, seque-a e certifique-se de que não há mais infiltrações.</li>
+                        <li>Aplique um fundo preparador de paredes para garantir a aderência.</li>
+                        <li>Repinte com uma tinta de qualidade.</li>
+                    </ul>
+                </div>
+                
+                <div class="section-title text-2xl md:text-3xl font-bold text-gray-800 mt-10 mb-6">
+                    <h3>3. Manchas e Mofo</h3>
+                </div>
+                <div class="bg-red-100 p-6 rounded-lg border-l-4 border-red-500 shadow-sm mb-6">
+                    <h4 class="font-bold text-lg text-red-700 mb-2 flex items-center"><i class="fas fa-bug mr-2"></i> Causa</h4>
+                    <p>Manchas e mofo são sinais de umidade ou infiltração. Podem ser causados por vazamentos, condensação ou falta de ventilação, principalmente em banheiros e cozinhas.</p>
+                    <h4 class="font-bold text-lg text-red-700 mt-4 mb-2 flex items-center"><i class="fas fa-tools mr-2"></i> Solução</h4>
+                    <ul class="list-disc list-inside space-y-2 mb-4 ml-4">
+                        <li>Identifique e elimine a fonte da umidade (consertar vazamentos, melhorar a ventilação).</li>
+                        <li>Limpe a área com uma solução de água sanitária diluída em água. Use luvas e máscara.</li>
+                        <li>Após a secagem, aplique uma tinta com propriedades anti-mofo.</li>
+                    </ul>
+                </div>
+                
+                <div class="psq-highlight p-6 rounded-lg my-8">
+                    <h4 class="text-xl font-bold text-blue-900 mb-2 flex items-center"><i class="fas fa-lightbulb text-blue-600 mr-2"></i> Prevenção é a Chave</h4>
+                    <p class="text-blue-800">A maioria dos problemas de pintura pode ser evitada com uma boa preparação da superfície e a escolha de uma tinta de qualidade, adequada para a finalidade e o ambiente. Sempre siga as instruções do fabricante e use os produtos recomendados para a preparação da parede.</p>
+                </div>
+                
+                <p class="text-lg leading-relaxed mb-6 mt-8">Ao enfrentar esses problemas, a paciência e a técnica correta são seus melhores aliados. Corrigir a causa-raiz é fundamental para que a pintura dure por muitos anos, mantendo a beleza e a saúde do seu lar.</p>
+            </section>
+        </article>
+<div class="text-center mt-12">
+<a class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition" href="artigos.html">
+<i class="fas fa-arrow-left mr-2"></i> Voltar para Índice de Artigos
+            </a>
+</div>
+</main>
+<footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-4 mb-6">
+                    <i class="fas fa-palette text-4xl text-blue-400"></i>
+                    <h3 class="text-2xl font-bold">Guia de Tintas Arquitetônicas</h3>
+                </div>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Este guia foi desenvolvido para auxiliar profissionais e entusiastas na escolha e aplicação correta de tintas arquitetônicas, promovendo resultados duradouros e seguros.
+                </p>
+                
+                <!-- Quick Links -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 max-w-2xl mx-auto">
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="index.html" class="hover:text-yellow-200 transition duration-300 nav-link">Início</a></h4>
+                    </div>
+					<div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="tipos-de-tintas.html" class="hover:text-yellow-200 transition duration-300 nav-link">Tipos de Tintas</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="psq.html" class="hover:text-yellow-200 transition duration-300 nav-link">PSQ</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="blog.html" class="hover:text-yellow-200 transition duration-300 nav-link">Dicas</a></h4>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="faq.html" class="hover:text-yellow-200 transition duration-300 nav-link">FAQ</a></h4>
+                    </div>
+					<div>
+                        <h4 class="font-semibold text-blue-400 mb-2"><a href="artigos.html" class="hover:text-yellow-200 transition duration-300 nav-link">Artigos</a></h4>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-sm text-gray-400">
+                        © 2025 Guia de Tintas Arquitetônicas. Material educativo para uso profissional e residencial.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
